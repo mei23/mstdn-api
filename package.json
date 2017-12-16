@@ -60,7 +60,7 @@
     "webpack": "^3.4.1"
   },
   "dependencies": {
-    "@types/node": "^8.0.19",
+    "@types/node": "8.0.19",
     "@types/superagent": "^3.5.3",
     "superagent": "^3.5.2"
   }
