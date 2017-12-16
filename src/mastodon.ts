@@ -233,10 +233,13 @@ export default class Mastodon {
    * @returns streamListener, which inherits from EventEmitter and has event, 'update', 'notification', 'delete', and so on.
    */
   public stream (path: string, reconnectInterval = 1000) {
-    const headers = {
+    const headers = this.accessToken ? {
       'Cache-Control': 'no-cache',
       'Accept': 'text/event-stream',
       'Authorization': `Bearer ${this.accessToken}`
+    } : {
+      'Cache-Control': 'no-cache',
+      'Accept': 'text/event-stream',
     }
     const url = resolveUrl(this.streamingApiUrl, path)
     return new StreamListener(url, headers, reconnectInterval)
