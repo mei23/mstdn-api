@@ -22,7 +22,7 @@ namespace OAuth {
   }
 
   export class AppData {
-    public url: string
+    public url: string | undefined
     constructor (
       public id: number,
       public name: string,

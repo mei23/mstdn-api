@@ -23,8 +23,8 @@ export default class StreamListener extends EventEmitter {
   private reconnectInterval = 1000
   private eventStream: EventStream
   private httpsOptions: object
-  private req: https.ClientRequest
-
+  private req: https.ClientRequest | undefined
+  
   /**
    * @param url request target url (method: GET), and this will be parsed
    * @param headers request headers
@@ -59,7 +59,7 @@ export default class StreamListener extends EventEmitter {
   public close () {
     if (this.readyState === ReadyState.CLOSED) return
     this.readyState = ReadyState.CLOSED
-    this.req.abort()
+    if (this.req) this.req.abort()
   }
 
   private _connect () {

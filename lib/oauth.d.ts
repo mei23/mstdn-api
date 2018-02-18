@@ -21,7 +21,7 @@ declare namespace OAuth {
         redirect_uri: string;
         client_id: string;
         client_secret: string;
-        url: string;
+        url: string | undefined;
         constructor(id: number, name: string, website: string | null, redirect_uri: string, client_id: string, client_secret: string);
         static from(raw: AppDataFromServer): AppData;
         readonly redirectUri: string;
