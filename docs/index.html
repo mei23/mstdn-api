@@ -67,17 +67,23 @@
 				<h1 id="mstdn-api">mstdn-api</h1>
 				<p><a href="https://travis-ci.org/onsen-ui/mstdn"><img src="https://travis-ci.org/onsen-ui/mstdn.svg?branch=master" alt="Build Status"></a>
 				<a href="https://coveralls.io/github/onsen-ui/mstdn?branch=master"><img src="https://coveralls.io/repos/github/onsen-ui/mstdn/badge.svg?branch=master" alt="Coverage Status"></a></p>
-				<p>UMD (including Node, Browser, and TypeScript!) Library for Mastodon API<br><a href="https://github.com/onsen-ui/mstdn">Github repository</a>, and<br><a href="https://www.npmjs.com/package/mstdn-api">npm package</a> are available.</p>
+				<p>UMD (including Node, Browser, and TypeScript!) Library for Mastodon API<br><a href="https://github.com/onsen-ui/mstdn">Github repository</a>, and <a href="https://www.npmjs.com/package/mstdn-api">npm package</a> are available.</p>
 				<h1 id="why-mstdn-api-">Why mstdn-api?</h1>
 				<p>You can use this library <strong>universally</strong>: Node, Browser(ES5), and TypeScript.</p>
 				<h1 id="how-to-install">How to install</h1>
-				<p><code>$ npm i -S mstdn-api</code></p>
-				<h1 id="how-to-use">How to use</h1>
+				<pre><code><span class="hljs-meta">$</span><span class="bash"> npm i -S mstdn-api</span>
+</code></pre><h1 id="how-to-use">How to use</h1>
 				<p>There are simple examples in ./example.</p>
 				<p>if you can use import-syntax, then: </p>
 				<pre><code><span class="hljs-keyword">import</span> Mastodon <span class="hljs-keyword">from</span> <span class="hljs-string">'mstdn-api'</span>
-</code></pre><h1 id="cdn">CDN</h1>
-				<p>provided by <a href="https://rawgit.com/">rawgit.com</a><br>for development: <a href="https://rawgit.com/onsen-ui/mstdn/master/dist/mastodon.min.js">mastodon.min.js</a></p>
+
+<span class="hljs-keyword">const</span> ACCESS_TOKEN = <span class="hljs-string">'......'</span> <span class="hljs-comment">// OAuth access_token (required)</span>
+<span class="hljs-keyword">const</span> BASE_URL = <span class="hljs-string">'mstdn.jp'</span> <span class="hljs-comment">// Mastodon's hostname or baseUrl (Optional)</span>
+<span class="hljs-keyword">const</span> mstdn = <span class="hljs-keyword">new</span> Mastodon(ACCESS_TOKEN, BASE_URL)
+</code></pre><p>See <a href="https://rawgit.com/onsen-ui/mstdn/master/docs/classes/_mastodon_.mastodon.html">documents of class Mastodon</a></p>
+				<h1 id="cdn">CDN</h1>
+				<p>for development: <a href="https://rawgit.com/onsen-ui/mstdn/master/dist/mastodon.min.js">https://rawgit.com/onsen-ui/mstdn/master/dist/mastodon.min.js</a>
+				provided by <a href="https://rawgit.com/">rawgit.com</a>  </p>
 				<p>variable &#39;Mastodon&#39; (window.Mastodon) is <strong>globally</strong> exported.</p>
 				<pre><code><span class="hljs-comment">/* global Mastodon */</span>
 <span class="hljs-keyword">const</span> mastodon = <span class="hljs-keyword">new</span> Mastodon(<span class="hljs-string">'YOUR_ACCESS_TOKEN'</span>)
@@ -98,6 +104,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_entities_account_.html">"entities/account"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_entities_apiresponse_.html">"entities/api<wbr>Response"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_entities_application_.html">"entities/application"</a>

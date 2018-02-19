@@ -1,6 +1,7 @@
 import StreamListener from './streamlistener';
 import Scope from './scope';
 import OAuth from './oauth';
+import ApiResponse from './entities/apiResponse';
 export default class Mastodon {
     static Scope: typeof Scope;
     static NO_REDIRECT: string;
@@ -27,6 +28,7 @@ export default class Mastodon {
     }>, baseUrl?: string): Promise<OAuth.AppData>;
     private static _post(path, params?, baseUrl?);
     get<T>(path: string, params?: {}): Promise<T>;
+    getx(path: string, params?: {}): Promise<ApiResponse>;
     patch<T>(path: string, params?: {}): Promise<T>;
     post<T>(path: string, params?: {}): Promise<T>;
     del(path: string): Promise<{}>;

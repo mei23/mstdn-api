@@ -8,6 +8,7 @@ import StreamListener from './streamlistener'
 import Scope from './scope'
 import OAuth from './oauth'
 const NO_REDIRECT = 'urn:ietf:wg:oauth:2.0:oob'
+import ApiResponse from './entities/apiResponse'
 
 /**
  * for Mastodon API
@@ -186,6 +187,26 @@ export default class Mastodon {
       .set('Authorization', `Bearer ${this.accessToken}`)
       .query(params)
       .then(resp => resp.body as T)
+  }
+
+  /**
+   * GET request to mastodon REST API
+   * @param path relative path from ${baseUrl}/api/v1/ or absolute path
+   * @param params Query parameters
+   */
+  public getx (path: string, params = {}): Promise<ApiResponse> {
+    const s = superagent
+      .get(resolveUrl(this.apiUrl, path))
+      .query(params)
+
+    if (this.accessToken) s.set('Authorization', `Bearer ${this.accessToken}`)
+
+    return s.then(resp => {
+        return {
+          data: resp.body,
+          resp: resp
+        }
+      })
   }
 
   /**

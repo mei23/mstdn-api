@@ -107,6 +107,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_mastodon_.mastodon.html#del" class="tsd-kind-icon">del</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_mastodon_.mastodon.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_mastodon_.mastodon.html#getx" class="tsd-kind-icon">getx</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_mastodon_.mastodon.html#patch" class="tsd-kind-icon">patch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_mastodon_.mastodon.html#post" class="tsd-kind-icon">post</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_mastodon_.mastodon.html#stream" class="tsd-kind-icon">stream</a></li>
@@ -132,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L24">mastodon.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L25">mastodon.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">NO_<wbr>REDIRECT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;NO_REDIRECT</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L19">mastodon.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L20">mastodon.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">Scope<span class="tsd-signature-symbol">:</span> <a href="../modules/_scope_.scope.html" class="tsd-signature-type">Scope</a><span class="tsd-signature-symbol"> =&nbsp;Scope</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L18">mastodon.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L19">mastodon.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L221">mastodon.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L242">mastodon.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L183">mastodon.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L184">mastodon.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -262,6 +263,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getx" class="tsd-anchor"></a>
+					<h3>getx</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">getx<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_entities_apiresponse_.apiresponse.html" class="tsd-signature-type">ApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L197">mastodon.ts:197</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>GET request to mastodon REST API</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>relative path from ${baseUrl}/api/v1/ or absolute path</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> params: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Query parameters</p>
+									</div>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_entities_apiresponse_.apiresponse.html" class="tsd-signature-type">ApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="patch" class="tsd-anchor"></a>
 					<h3>patch</h3>
@@ -272,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L196">mastodon.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L217">mastodon.ts:217</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -317,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L209">mastodon.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L230">mastodon.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -362,7 +402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L235">mastodon.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L256">mastodon.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L143">mastodon.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L144">mastodon.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L86">mastodon.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L87">mastodon.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +540,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L109">mastodon.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L110">mastodon.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L43">mastodon.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L44">mastodon.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -588,7 +628,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/onsen-ui/mstdn/blob/7c5dcac/src/mastodon.ts#L62">mastodon.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/mastodon.ts#L63">mastodon.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,6 +675,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_entities_account_.html">"entities/account"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_entities_apiresponse_.html">"entities/api<wbr>Response"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_entities_application_.html">"entities/application"</a>
@@ -695,6 +738,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="_mastodon_.mastodon.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_mastodon_.mastodon.html#getx" class="tsd-kind-icon">getx</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="_mastodon_.mastodon.html#patch" class="tsd-kind-icon">patch</a>
