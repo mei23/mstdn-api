@@ -1,3 +1,4 @@
+import * as http from 'http'
 import * as https from 'https'
 import { parse as parseUrl } from 'url'
 import * as EventEmitter from 'events'
@@ -23,7 +24,7 @@ export default class StreamListener extends EventEmitter {
   private reconnectInterval = 1000
   private eventStream: EventStream
   private httpsOptions: object
-  private req: https.ClientRequest | undefined
+  private req: http.ClientRequest | undefined
   
   /**
    * @param url request target url (method: GET), and this will be parsed

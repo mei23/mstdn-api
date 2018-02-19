@@ -119,6 +119,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_eventstream_.eventstream.html#_destroy" class="tsd-kind-icon">_destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_eventstream_.eventstream.html#_final" class="tsd-kind-icon">_final</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_eventstream_.eventstream.html#_write" class="tsd-kind-icon">_write</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_eventstream_.eventstream.html#_writev" class="tsd-kind-icon">_writev</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_eventstream_.eventstream.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_eventstream_.eventstream.html#cork" class="tsd-kind-icon">cork</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_eventstream_.eventstream.html#destroy" class="tsd-kind-icon">destroy</a></li>
@@ -158,7 +159,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.__constructor</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5034</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5352</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +182,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Writable.writable</p>
 						<ul>
-							<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5034</li>
+							<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5352</li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +193,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
-							<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:752</li>
+							<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:907</li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +211,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable._destroy</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5037</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5356</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -237,7 +238,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable._final</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5038</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5357</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,7 +262,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Writable._write</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/694f230/src/eventstream.ts#L15">eventstream.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/mei23/mstdn-api/blob/18773bb/src/eventstream.ts#L15">eventstream.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -274,6 +275,51 @@
 								</li>
 								<li>
 									<h5>next: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> err: <span class="tsd-signature-type">Error</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="_writev" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> _writev</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">_writev<span class="tsd-signature-symbol">(</span>chunks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Writable._writev</p>
+								<ul>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5355</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chunks: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -316,7 +362,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5059</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5378</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +413,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5060</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5379</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -398,7 +444,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5061</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5380</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -429,7 +475,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5062</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5381</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -466,7 +512,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5063</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5382</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -497,7 +543,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5064</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5383</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -534,7 +580,7 @@
 								<p>Inherited from Writable.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5065</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5384</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -579,7 +625,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.cork</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5045</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5364</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -597,7 +643,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.destroy</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5047</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5366</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -628,7 +674,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5067</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5386</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -647,7 +693,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5068</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5387</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -663,7 +709,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5069</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5388</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -682,7 +728,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5070</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5389</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -701,7 +747,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5071</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5390</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -717,7 +763,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5072</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5391</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -736,7 +782,7 @@
 								<p>Inherited from Writable.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5073</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5392</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -756,7 +802,7 @@
 					<a name="end" class="tsd-anchor"></a>
 					<h3>end</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span>cb<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span>chunk<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, cb<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span>chunk<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, encoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -765,16 +811,22 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.end</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5042</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5361</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> cb: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.end</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5043</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5362</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -792,7 +844,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.end</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5044</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5363</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -823,7 +875,7 @@
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:765</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:920</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -842,7 +894,7 @@
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:762</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:917</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -861,7 +913,7 @@
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:766</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:921</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -886,7 +938,7 @@
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:763</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:918</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -917,7 +969,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5075</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5394</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -954,7 +1006,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5076</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5395</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -985,7 +1037,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5077</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5396</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1016,7 +1068,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5078</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5397</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1053,7 +1105,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5079</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5398</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1084,7 +1136,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5080</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5399</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1121,7 +1173,7 @@
 								<p>Inherited from Writable.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5081</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5400</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1173,7 +1225,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5083</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5402</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1210,7 +1262,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5084</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5403</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1241,7 +1293,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5085</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5404</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1272,7 +1324,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5086</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5405</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1309,7 +1361,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5087</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5406</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1340,7 +1392,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5088</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5407</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1377,7 +1429,7 @@
 								<p>Inherited from Writable.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5089</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5408</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1422,7 +1474,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from internal.pipe</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:4934</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5252</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1462,7 +1514,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5091</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5410</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1499,7 +1551,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5092</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5411</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1530,7 +1582,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5093</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5412</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1561,7 +1613,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5094</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5413</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1598,7 +1650,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5095</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5414</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1629,7 +1681,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5096</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5415</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1666,7 +1718,7 @@
 								<p>Inherited from Writable.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5097</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5416</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1718,7 +1770,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5099</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5418</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1755,7 +1807,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5100</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5419</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1786,7 +1838,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5101</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5420</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1817,7 +1869,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5102</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5421</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1854,7 +1906,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5103</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5422</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1885,7 +1937,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5104</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5423</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1922,7 +1974,7 @@
 								<p>Inherited from Writable.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5105</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5424</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1968,7 +2020,7 @@
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:760</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:915</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1999,7 +2051,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5107</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5426</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2036,7 +2088,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5108</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5427</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2067,7 +2119,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5109</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5428</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2098,7 +2150,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5110</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5429</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2135,7 +2187,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5111</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5430</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2166,7 +2218,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5112</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5431</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2203,7 +2255,7 @@
 								<p>Inherited from Writable.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5113</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5432</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2248,7 +2300,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.setDefaultEncoding</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5041</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5360</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2273,7 +2325,7 @@
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:761</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:916</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2297,7 +2349,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.uncork</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5046</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5365</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2316,7 +2368,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.write</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5039</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5358</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2334,7 +2386,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Writable.write</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5040</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:5359</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2364,7 +2416,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:751</li>
+									<li>Defined in /home/a31/develop/mstdn-api/node_modules/@types/node/index.d.ts:906</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2456,6 +2508,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_eventstream_.eventstream.html#_write" class="tsd-kind-icon">_write</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_eventstream_.eventstream.html#_writev" class="tsd-kind-icon">_writev</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_eventstream_.eventstream.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
