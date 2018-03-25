@@ -182,11 +182,13 @@ export default class Mastodon {
    * @param params Query parameters
    */
   public get<T> (path: string, params = {}): Promise<T> {
-    return superagent
+    const s = superagent
       .get(resolveUrl(this.apiUrl, path))
-      .set('Authorization', `Bearer ${this.accessToken}`)
       .query(params)
-      .then(resp => resp.body as T)
+
+    if (this.accessToken) s.set('Authorization', `Bearer ${this.accessToken}`)
+
+    return s.then(resp => resp.body as T)
   }
 
   /**
