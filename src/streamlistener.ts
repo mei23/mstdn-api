@@ -9,7 +9,9 @@ import { includes } from './utils'
 const enum ReadyState {
   CONNECTING,
   OPEN,
-  CLOSED
+  CLOSED,
+  /** not connected yet OR not arrived any data */
+  INIT
 }
 
 /**
@@ -20,7 +22,7 @@ const enum ReadyState {
  * You can add your own events by method 'on' and trigger them by method 'emit'.
  */
 export default class StreamListener extends EventEmitter {
-  private readyState = ReadyState.CONNECTING
+  private readyState = ReadyState.INIT
   private reconnectInterval = 1000
   private reconnectIntervalOrg = 1000
   private eventStream: EventStream
@@ -96,7 +98,17 @@ export default class StreamListener extends EventEmitter {
 
       res.pipe(this.eventStream)
     })
-    req.on('error', () => this._onClosed())
+
+    req.on('error', error => {
+      // 4xx, 5xx, 接続失敗, 接続断 すべてここに来る可能性がある
+
+      if (this.readyState === ReadyState.INIT) {
+        this.emit('error', error)
+      }
+      else {
+        this._onClosed()
+      }
+    })
     req.setNoDelay(true)
     req.end()
     this.req = req
