@@ -22,6 +22,7 @@ const enum ReadyState {
 export default class StreamListener extends EventEmitter {
   private readyState = ReadyState.CONNECTING
   private reconnectInterval = 1000
+  private reconnectIntervalOrg = 1000
   private eventStream: EventStream
   private httpsOptions: object
   private req: http.ClientRequest | undefined
@@ -35,6 +36,7 @@ export default class StreamListener extends EventEmitter {
     super()
 
     if (reconnectInterval) this.reconnectInterval = reconnectInterval
+    this.reconnectIntervalOrg = this.reconnectInterval
 
     const parsedUrl = parseUrl(url)
     this.httpsOptions = {
@@ -78,6 +80,8 @@ export default class StreamListener extends EventEmitter {
       }
 
       this.readyState = ReadyState.OPEN
+      this.reconnectInterval = this.reconnectIntervalOrg
+
       res.on('close', () => {
         res.removeAllListeners('close')
         res.removeAllListeners('end')
@@ -92,7 +96,7 @@ export default class StreamListener extends EventEmitter {
 
       res.pipe(this.eventStream)
     })
-    req.on('error', this._onClosed)
+    req.on('error', () => this._onClosed())
     req.setNoDelay(true)
     req.end()
     this.req = req
@@ -101,11 +105,14 @@ export default class StreamListener extends EventEmitter {
   private _onClosed (): void {
     if (this.readyState === ReadyState.CLOSED) return
     this.readyState = ReadyState.CONNECTING
-    this.emit('error', new Error('duplicate Close'))
+
+    if (!this.reconnectInterval) return
 
     setTimeout(() => {
       if (this.readyState !== ReadyState.CONNECTING) return
       this._connect()
     }, this.reconnectInterval)
+
+    this.reconnectInterval += 1000
   }
 }
